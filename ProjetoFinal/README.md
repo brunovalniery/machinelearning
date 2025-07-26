@@ -116,7 +116,7 @@ A investigação das saídas das camadas intermediárias do **"Meu Modelo"** rev
 
 1.  **Clone o repositório:**
     ```bash
-    git clone [https://github.com/brunovalniery/machinelearning.git](hhttps://github.com/brunovalniery/machinelearning.git)
+    git clone https://github.com/brunovalniery/machinelearning.git
     ```
 2.  **Abra no Google Colab:**
     - Vá para [colab.research.google.com](https://colab.research.google.com).
