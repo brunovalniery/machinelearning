@@ -1,8 +1,8 @@
 # Comparativo de CNNs para Classificação no CIFAR-10
 
-Este documento fornece informações sobre os modelos de redes neurais convolucionais (CNNs) desenvolvidos como parte do projeto final da disciplina de Machine Learning.
+Este documento fornece informações sobre os modelos de redes neurais convolucionais (CNNs) e foi desenvolvido como parte do projeto final da disciplina de Machine Learning.
 
-## 1. Detalhes do Modelo
+## 1. Detalhes do modelo
 
 - **Autor:** Bruno Valniery
 - **Data:** Julho de 2025
@@ -12,7 +12,7 @@ Este documento fornece informações sobre os modelos de redes neurais convoluci
 
 ---
 
-## 2. Intenção de Uso
+## 2. Intenção de uso
 
 - **Uso principal:** O objetivo primário destes modelos é acadêmico. Foram desenvolvidos para aprender, implementar, comparar e analisar diferentes arquiteturas de CNNs, aplicando técnicas de otimização e avaliação.
 - **Usuários-alvo:** Estudantes, pesquisadores e entusiastas de Machine Learning interessados em visão computacional.
@@ -20,7 +20,7 @@ Este documento fornece informações sobre os modelos de redes neurais convoluci
 
 ---
 
-## 3. Dados de Treinamento e Avaliação
+## 3. Dados de treinamento e avaliação
 
 ### 3.1. Dataset
 - **Fonte:** **CIFAR-10**.
@@ -35,7 +35,7 @@ Este documento fornece informações sobre os modelos de redes neurais convoluci
 
 ---
 
-## 4. Procedimento de Treinamento
+## 4. Procedimento de treinamento
 
 - **Framework:** PyTorch
 - **Otimizador:** Adam
@@ -46,7 +46,7 @@ Este documento fornece informações sobre os modelos de redes neurais convoluci
 
 ---
 
-## 5. Análise Quantitativa e Resultados
+## 5. Análise quantitativa e resultados
 
 A performance de quatro arquiteturas distintas foi comparada.
 
@@ -54,7 +54,7 @@ A performance de quatro arquiteturas distintas foi comparada.
 
 O gráfico abaixo ilustra a convergência de cada modelo. O "Meu Modelo", com *Batch Normalization* e *Dropout*, demonstrou a menor perda de validação e a maior estabilidade, indicando melhor generalização.
 
-![Comparação das Curvas de Perda](./assets/compperdavalid.png)`
+![Comparação das Curvas de Perda](./assets/compperdavalid.png)
 
 ---
 
@@ -63,7 +63,7 @@ O gráfico abaixo ilustra a convergência de cada modelo. O "Meu Modelo", com *B
 - **Arquitetura:** CNN simples com 2 camadas convolucionais.
 - **Análise:** Serviu como um baseline. A matriz de confusão mostra dificuldades significativas em distinguir classes similares como `cat` vs. `dog`.
 
-![Matriz de Confusão do Modelo Base](./assets/modelobase.png)`
+![Matriz de Confusão do Modelo Base](./assets/modelobase.png)
 
 ---
 
@@ -72,7 +72,7 @@ O gráfico abaixo ilustra a convergência de cada modelo. O "Meu Modelo", com *B
 - **Arquitetura:** Idêntica ao Modelo Base, mas com o dobro de filtros na primeira camada (64 em vez de 32).
 - **Análise:** O aumento na capacidade do modelo (mais features) resultou em uma melhora notável na acurácia, confirmando que o Modelo Base era limitado.
 
-![Matriz de Confusão com n_feature=64](./assets/nfeature.png)`
+![Matriz de Confusão com n_feature=64](./assets/nfeature.png)
 
 ---
 
@@ -81,7 +81,7 @@ O gráfico abaixo ilustra a convergência de cada modelo. O "Meu Modelo", com *B
 - **Arquitetura:** CNN mais profunda com 3 blocos convolucionais modulares.
 - **Análise:** A profundidade adicional permitiu que o modelo aprendesse features mais complexas e hierárquicas, resultando em um salto de performance.
 
-![Matriz de Confusão do Modelo com Blocos](./assets/modeloblocos.png)`
+![Matriz de Confusão do Modelo com Blocos](./assets/modeloblocos.png)
 
 ---
 
@@ -90,7 +90,7 @@ O gráfico abaixo ilustra a convergência de cada modelo. O "Meu Modelo", com *B
 - **Arquitetura:** CNN profunda com 3 camadas convolucionais, cada uma seguida por *Batch Normalization*, e uma camada de *Dropout* antes da classificação final.
 - **Análise:** Este modelo alcançou o melhor desempenho. *Batch Normalization* estabilizou o treinamento, permitindo uma convergência mais rápida, enquanto o *Dropout* ajudou a regularizar o modelo, melhorando sua capacidade de generalização e reduzindo o overfitting.
 
-![Matriz de Confusão do Seu Modelo](./assets/meumodelo.png)`
+![Matriz de Confusão do Seu Modelo](./assets/meumodelo.png)
 
 ---
 
@@ -98,9 +98,9 @@ O gráfico abaixo ilustra a convergência de cada modelo. O "Meu Modelo", com *B
 
 A investigação das saídas das camadas intermediárias do **"Meu Modelo"** revelou que as camadas iniciais aprenderam a detectar características simples (bordas, cores), enquanto as camadas mais profundas aprenderam a identificar texturas e partes de objetos mais complexas.
 
-![Visualização dos Hooks da Camada Conv3](./assets/saida1.png)`
+![Visualização dos Hooks da Camada Conv3](./assets/saida1.png)
 
-![Visualização dos Hooks da Camada Conv3](./assets/saida2.png)`
+![Visualização dos Hooks da Camada Conv3](./assets/saida2.png)
 
 ---
 
@@ -112,7 +112,7 @@ A investigação das saídas das camadas intermediárias do **"Meu Modelo"** rev
 
 ---
 
-## 8. Como Utilizar
+## 8. Como utilizar
 
 1.  **Clone o repositório:**
     ```bash
