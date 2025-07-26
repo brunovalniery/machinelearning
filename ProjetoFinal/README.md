@@ -72,7 +72,7 @@ O gráfico abaixo ilustra a convergência de cada modelo. O "Meu Modelo", com *B
 - **Arquitetura:** Idêntica ao Modelo Base, mas com o dobro de filtros na primeira camada (64 em vez de 32).
 - **Análise:** O aumento na capacidade do modelo (mais features) resultou em uma melhora notável na acurácia, confirmando que o Modelo Base era limitado.
 
-![Matriz de Confusão com n_feature=64](./assets/nfeature.png)
+![Matriz de Confusão com n_feature=64](./assets/nfeatures.png)
 
 ---
 
